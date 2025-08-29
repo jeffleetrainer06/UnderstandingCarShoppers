@@ -1,0 +1,104 @@
+[
+  {
+    "id": "analytical",
+    "name": "The Analytical Buyer",
+    "icon": "📊",
+    "characteristics": ["Detail-oriented", "Methodical", "Research-focused", "Reserved"],
+    "traits": ["Introverted", "Systematic", "Cautious", "Logical"],
+    "communicationStyle": "Prefers facts over emotions, asks specific questions",
+    "decisionTime": "Extended research period, slower to decide",
+    "primaryMotivations": ["Reliability", "Value", "Specifications"],
+    "engagementTips": [
+      "Provide detailed specifications",
+      "Use comparison charts",
+      "Allow time for research",
+      "Avoid high pressure tactics"
+    ],
+    "color": "blue"
+  },
+  {
+    "id": "driver",
+    "name": "The Driver/Assertive Buyer",
+    "icon": "🎯",
+    "characteristics": ["Time-conscious", "Decisive", "Competitive", "Results-oriented"],
+    "traits": ["Dominant", "Impatient", "Goal-focused", "Confident"],
+    "communicationStyle": "Direct, brief, business-focused",
+    "decisionTime": "Quick decisions, dislikes delays",
+    "primaryMotivations": ["Speed", "Performance", "Status"],
+    "engagementTips": [
+      "Be direct and concise",
+      "Focus on results and benefits",
+      "Respect their time",
+      "Move quickly through the process"
+    ],
+    "color": "red"
+  },
+  {
+    "id": "amiable",
+    "name": "The Amiable/Relationship Buyer",
+    "icon": "🤝",
+    "characteristics": ["Trust-focused", "Loyal", "Relationship-oriented", "Cooperative"],
+    "traits": ["Friendly", "Supportive", "Security-seeking", "People-focused"],
+    "communicationStyle": "Personal, warm, story-oriented",
+    "decisionTime": "Needs time to build trust, seeks consensus",
+    "primaryMotivations": ["Safety", "Comfort", "Trust"],
+    "engagementTips": [
+      "Build personal relationships",
+      "Share customer testimonials",
+      "Focus on family needs",
+      "Provide reassurance and support"
+    ],
+    "color": "green"
+  },
+  {
+    "id": "expressive",
+    "name": "The Expressive/Emotional Buyer",
+    "icon": "🌟",
+    "characteristics": ["Enthusiastic", "Image-conscious", "Experience-driven", "Social"],
+    "traits": ["Outgoing", "Optimistic", "Impulsive", "Status-aware"],
+    "communicationStyle": "Animated, personal, feeling-based",
+    "decisionTime": "Spontaneous, emotion-driven decisions",
+    "primaryMotivations": ["Style", "Excitement", "Prestige"],
+    "engagementTips": [
+      "Match their enthusiasm",
+      "Use visual presentations",
+      "Focus on lifestyle benefits",
+      "Create exciting experiences"
+    ],
+    "color": "yellow"
+  },
+  {
+    "id": "value",
+    "name": "The Value/Economic Buyer",
+    "icon": "💰",
+    "characteristics": ["Price-focused", "Practical", "Bargain-seeking", "Budget-conscious"],
+    "traits": ["Frugal", "Comparison-driven", "Deal-oriented"],
+    "communicationStyle": "Cost-focused questions, seeks discounts",
+    "decisionTime": "Shops around extensively, price-sensitive",
+    "primaryMotivations": ["Price", "Savings", "Practicality"],
+    "engagementTips": [
+      "Emphasize value proposition",
+      "Show cost comparisons",
+      "Highlight incentives and deals",
+      "Focus on total cost of ownership"
+    ],
+    "color": "purple"
+  },
+  {
+    "id": "digital",
+    "name": "The Digital-First/Modern Buyer",
+    "icon": "💻",
+    "characteristics": ["Tech-savvy", "Convenience-focused", "Transparency-demanding"],
+    "traits": ["Efficient", "Informed", "Control-seeking"],
+    "communicationStyle": "Prefers digital communication, self-service",
+    "decisionTime": "Fast online research, expects streamlined process",
+    "primaryMotivations": ["Convenience", "Transparency", "Control"],
+    "engagementTips": [
+      "Provide digital tools and resources",
+      "Offer online configurators",
+      "Ensure transparent pricing",
+      "Enable self-service options"
+    ],
+    "color": "indigo"
+  }
+]

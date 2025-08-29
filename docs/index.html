@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Customer Intelligence Tool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .progress-bar {
+            transition: width 0.5s ease;
+        }
+        .quiz-option {
+            transition: all 0.2s ease;
+        }
+        .quiz-option:hover {
+            transform: translateX(5px);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-car text-blue-600 text-2xl mr-3"></i>
+                    <h1 class="text-xl font-bold text-gray-800">Automotive Customer Intelligence Tool</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button onclick="showSection('home')" class="nav-btn px-4 py-2 text-gray-600 hover:text-blue-600 transition">
+                        <i class="fas fa-home mr-2"></i>Home
+                    </button>
+                    <button onclick="showSection('quiz')" class="nav-btn px-4 py-2 text-gray-600 hover:text-blue-600 transition">
+                        <i class="fas fa-question-circle mr-2"></i>Quiz
+                    </button>
+                    <button onclick="showSection('types')" class="nav-btn px-4 py-2 text-gray-600 hover:text-blue-600 transition">
+                        <i class="fas fa-users mr-2"></i>Customer Types
+                    </button>
+                    <button onclick="showSection('strategies')" class="nav-btn px-4 py-2 text-gray-600 hover:text-blue-600 transition">
+                        <i class="fas fa-lightbulb mr-2"></i>Strategies
+                    </button>
+                    <button onclick="showSection('trends')" class="nav-btn px-4 py-2 text-gray-600 hover:text-blue-600 transition">
+                        <i class="fas fa-chart-line mr-2"></i>Trends
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Home Section -->
+        <div id="home-section" class="section fade-in">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">
+                    Master the Art of Understanding Automotive Customers
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Learn to identify, understand, and effectively engage with different types of automotive shoppers 
+                    to improve your sales success and customer satisfaction.
+                </p>
+            </div>
+
+            <!-- Feature Cards -->
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Identify Customer Types</h3>
+                    <p class="text-gray-600">Learn to quickly recognize the six core customer personality types through behavioral cues and communication patterns.</p>
+                    <button onclick="showSection('quiz')" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+                        Take the Quiz <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Engagement Strategies</h3>
+                    <p class="text-gray-600">Discover tailored communication approaches and sales techniques for each customer type to build trust and close deals.</p>
+                    <button onclick="showSection('strategies')" class="mt-4 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">
+                        View Strategies <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                    <div class="text-purple-600 text-4xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Modern Trends</h3>
+                    <p class="text-gray-600">Stay ahead with insights on digital-first buyers, EV customers, and emerging automotive market trends for 2025 and beyond.</p>
+                    <button onclick="showSection('trends')" class="mt-4 bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">
+                        Explore Trends <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Statistics -->
+            <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl text-white p-8 mb-12">
+                <h3 class="text-2xl font-bold mb-6">Key Industry Insights</h3>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold mb-2">87%</div>
+                        <div class="text-blue-100">of car buyers research online first</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold mb-2">41</div>
+                        <div class="text-blue-100">Average age of EV buyers</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold mb-2">6</div>
+                        <div class="text-blue-100">Core customer personality types</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold mb-2">2025</div>
+                        <div class="text-blue-100">Year of digital transformation</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Path -->
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h3 class="text-2xl font-bold mb-6">Your Learning Journey</h3>
+                <div class="space-y-4">
+                    <div class="flex items-center p-4 bg-blue-50 rounded-lg">
+                        <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mr-4">1</div>
+                        <div>
+                            <h4 class="font-bold">Take the Customer Type Quiz</h4>
+                            <p class="text-gray-600">Understand how to identify different customer personalities</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 bg-green-50 rounded-lg">
+                        <div class="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center font-bold mr-4">2</div>
+                        <div>
+                            <h4 class="font-bold">Explore Customer Profiles</h4>
+                            <p class="text-gray-600">Deep dive into each customer type's characteristics and motivations</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 bg-purple-50 rounded-lg">
+                        <div class="w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold mr-4">3</div>
+                        <div>
+                            <h4 class="font-bold">Master Engagement Strategies</h4>
+                            <p class="text-gray-600">Learn tailored approaches for each customer type</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 bg-indigo-50 rounded-lg">
+                        <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold mr-4">4</div>
+                        <div>
+                            <h4 class="font-bold">Apply Modern Best Practices</h4>
+                            <p class="text-gray-600">Implement cutting-edge sales techniques for 2025 and beyond</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quiz Section -->
+        <div id="quiz-section" class="section hidden">
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h2 class="text-3xl font-bold mb-6">Customer Type Identification Quiz</h2>
+                <p class="text-gray-600 mb-8">Answer these questions to help identify customer personality types and learn the best engagement strategies.</p>
+                
+                <div id="quiz-container">
+                    <!-- Quiz content will be loaded here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Customer Types Section -->
+        <div id="types-section" class="section hidden">
+            <h2 class="text-3xl font-bold mb-8">The Six Core Customer Types</h2>
+            <div id="customer-types-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Customer type cards will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Strategies Section -->
+        <div id="strategies-section" class="section hidden">
+            <h2 class="text-3xl font-bold mb-8">Engagement Strategies & Best Practices</h2>
+            
+            <!-- Strategy Tabs -->
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <button onclick="showStrategyTab('communication')" class="strategy-tab px-4 py-2 bg-blue-600 text-white rounded-lg">
+                        Communication Techniques
+                    </button>
+                    <button onclick="showStrategyTab('trust')" class="strategy-tab px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300">
+                        Building Trust
+                    </button>
+                    <button onclick="showStrategyTab('objections')" class="strategy-tab px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300">
+                        Handling Objections
+                    </button>
+                    <button onclick="showStrategyTab('closing')" class="strategy-tab px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300">
+                        Closing Techniques
+                    </button>
+                </div>
+                
+                <div id="strategy-content">
+                    <!-- Strategy content will be loaded here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Trends Section -->
+        <div id="trends-section" class="section hidden">
+            <h2 class="text-3xl font-bold mb-8">Modern Automotive Sales Trends</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- EV Trends -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-charging-station text-green-600 text-3xl mr-3"></i>
+                        <h3 class="text-xl font-bold">Electric Vehicle Buyers</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Average age: 41 years (vs 52 for traditional)</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Tech-savvy and environmentally conscious</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Focus on charging infrastructure</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Value technology features</li>
+                    </ul>
+                </div>
+
+                <!-- Digital Transformation -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-laptop text-blue-600 text-3xl mr-3"></i>
+                        <h3 class="text-xl font-bold">Digital Transformation</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i>87% research online before visiting</li>
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i>Omnichannel experience expected</li>
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i>Virtual showrooms gaining popularity</li>
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i>AI-powered recommendations</li>
+                    </ul>
+                </div>
+
+                <!-- Gen Z Expectations -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-mobile-alt text-purple-600 text-3xl mr-3"></i>
+                        <h3 class="text-xl font-bold">Gen Z Expectations</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Mobile-first interactions</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Instant communication preferred</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Sustainability is key factor</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Social media influence strong</li>
+                    </ul>
+                </div>
+
+                <!-- 2025 Best Practices -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-award text-yellow-600 text-3xl mr-3"></i>
+                        <h3 class="text-xl font-bold">2025 Best Practices</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i>Transparent pricing essential</li>
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i>Personalized experiences</li>
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i>Speed and efficiency critical</li>
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i>Post-purchase follow-up vital</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Future Outlook -->
+            <div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-xl text-white p-8 mt-8">
+                <h3 class="text-2xl font-bold mb-4">Looking Ahead: 2025-2027</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div>
+                        <h4 class="font-bold mb-2"><i class="fas fa-robot mr-2"></i>AI Integration</h4>
+                        <p class="text-indigo-100">Predictive analytics and personalized recommendations will become standard</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-2"><i class="fas fa-vr-cardboard mr-2"></i>AR/VR Experiences</h4>
+                        <p class="text-indigo-100">Virtual showrooms and augmented reality feature demonstrations</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-2"><i class="fas fa-link mr-2"></i>Blockchain</h4>
+                        <p class="text-indigo-100">Transparent vehicle history and secure digital transactions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Progress Tracker (Fixed Position) -->
+    <div class="fixed bottom-4 right-4 bg-white rounded-lg shadow-lg p-4 hidden" id="progress-tracker">
+        <h4 class="font-bold text-sm mb-2">Your Progress</h4>
+        <div class="flex space-x-2">
+            <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center text-white text-xs" title="Home Visited">
+                <i class="fas fa-check"></i>
+            </div>
+            <div id="quiz-progress" class="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center text-white text-xs" title="Quiz">
+                <i class="fas fa-question"></i>
+            </div>
+            <div id="types-progress" class="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center text-white text-xs" title="Customer Types">
+                <i class="fas fa-users"></i>
+            </div>
+            <div id="strategies-progress" class="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center text-white text-xs" title="Strategies">
+                <i class="fas fa-lightbulb"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/app-static.js"></script>
+</body>
+</html>

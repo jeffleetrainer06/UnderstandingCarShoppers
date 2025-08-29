@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "When making a major purchase, what's most important to you?",
+    "answers": [
+      { "text": "Having all the facts and specifications", "type": "analytical" },
+      { "text": "Getting it done quickly and efficiently", "type": "driver" },
+      { "text": "Feeling comfortable with the seller", "type": "amiable" },
+      { "text": "How it makes me feel and look", "type": "expressive" },
+      { "text": "Getting the best deal possible", "type": "value" },
+      { "text": "Researching online first", "type": "digital" }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "How do you prefer to communicate with salespeople?",
+    "answers": [
+      { "text": "Through detailed emails with data", "type": "analytical" },
+      { "text": "Quick, to-the-point conversations", "type": "driver" },
+      { "text": "Face-to-face, building rapport", "type": "amiable" },
+      { "text": "Enthusiastic, personal discussions", "type": "expressive" },
+      { "text": "Focused on price and deals", "type": "value" },
+      { "text": "Through apps and online chat", "type": "digital" }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "What frustrates you most when shopping?",
+    "answers": [
+      { "text": "Lack of detailed information", "type": "analytical" },
+      { "text": "Slow, inefficient processes", "type": "driver" },
+      { "text": "Pushy, impersonal salespeople", "type": "amiable" },
+      { "text": "Boring, uninspiring presentations", "type": "expressive" },
+      { "text": "Hidden fees and unclear pricing", "type": "value" },
+      { "text": "Having to visit in person", "type": "digital" }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "How do you typically make decisions?",
+    "answers": [
+      { "text": "After thorough research and analysis", "type": "analytical" },
+      { "text": "Quickly, once I know what I want", "type": "driver" },
+      { "text": "After consulting family and friends", "type": "amiable" },
+      { "text": "Based on excitement and emotion", "type": "expressive" },
+      { "text": "After comparing multiple options for value", "type": "value" },
+      { "text": "Using online reviews and tools", "type": "digital" }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "What type of information do you find most helpful?",
+    "answers": [
+      { "text": "Technical specifications and comparisons", "type": "analytical" },
+      { "text": "Key benefits and competitive advantages", "type": "driver" },
+      { "text": "Customer testimonials and reviews", "type": "amiable" },
+      { "text": "Visual content and lifestyle imagery", "type": "expressive" },
+      { "text": "Price breakdowns and cost analysis", "type": "value" },
+      { "text": "Interactive online configurators", "type": "digital" }
+    ]
+  }
+]
